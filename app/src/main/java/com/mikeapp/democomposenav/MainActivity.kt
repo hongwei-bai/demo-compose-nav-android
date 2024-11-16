@@ -14,6 +14,7 @@ import androidx.navigation.navigation
 import com.mikeapp.democomposenav.ui.BottomNavBar
 import com.mikeapp.democomposenav.ui.DetailsScreen
 import com.mikeapp.democomposenav.ui.HomeScreen
+import com.mikeapp.democomposenav.ui.PagerScreen
 import com.mikeapp.democomposenav.ui.S1Screen
 import com.mikeapp.democomposenav.ui.S2Screen
 import com.mikeapp.democomposenav.ui.S3Screen
@@ -43,6 +44,7 @@ class MainActivity : ComponentActivity() {
                                 composable("s3") { S3Screen(navController, innerPadding) }
                             }
                         }
+                        composable("pager") { PagerScreen(navController, innerPadding) }
                         composable("settings") { SettingsScreen(navController, innerPadding) }
                     }
                 }

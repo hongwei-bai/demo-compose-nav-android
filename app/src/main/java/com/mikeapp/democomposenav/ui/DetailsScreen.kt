@@ -46,12 +46,12 @@ fun DetailsScreen(navController: NavController, paddingValues: PaddingValues) {
     ) { innerPadding ->
         NavHost(
             navController = subNavController,
-            startDestination = "s1",
+            startDestination = "details/s1",
             modifier = Modifier.padding(innerPadding)
         ) {
-            composable("s1") { S1Screen(navController, innerPadding) }
-            composable("s2") { S2Screen(navController, innerPadding) }
-            composable("s3") { S3Screen(navController, innerPadding) }
+            composable("details/s1") { S1Screen(navController, innerPadding) }
+            composable("details/s2") { S2Screen(navController, innerPadding) }
+            composable("details/s3") { S3Screen(navController, innerPadding) }
         }
     }
 }

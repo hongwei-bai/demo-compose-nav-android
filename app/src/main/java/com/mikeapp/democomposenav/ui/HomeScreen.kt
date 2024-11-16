@@ -32,7 +32,7 @@ import kotlinx.coroutines.launch
 
 @Composable
 fun BottomNavBar(navController: NavHostController) {
-    val items = listOf("Home", "Details", "Settings")
+    val items = listOf("Home", "Details", "Pager", "Settings")
     NavigationBar {
         items.forEach { screen ->
             NavigationBarItem(
