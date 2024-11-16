@@ -1,4 +1,4 @@
-package com.mikeapp.demo_compose_nav
+package com.mikeapp.democomposenav
 
 import org.junit.Test
 

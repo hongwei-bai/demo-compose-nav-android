@@ -1,4 +1,4 @@
-package com.mikeapp.demo_compose_nav
+package com.mikeapp.democomposenav
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.mikeapp.demo_compose_nav", appContext.packageName)
+        assertEquals("com.mikeapp.sportshub", appContext.packageName)
     }
 }

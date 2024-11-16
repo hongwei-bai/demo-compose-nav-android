@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "demo-compose-nav"
+rootProject.name = "demo-compose-nav-android"
 include(":app")
- 
