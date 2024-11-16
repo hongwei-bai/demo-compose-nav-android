@@ -10,12 +10,12 @@ plugins {
 
 android {
     namespace = "com.mikeapp.democomposenav"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.mikeapp.democomposenav"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -71,8 +71,11 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.foundation)
+
+    implementation(libs.kotlinx.datetime)
+    implementation(libs.kotlinx.serialization.json)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -83,8 +86,8 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // network
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation(libs.retrofit.v290)
+    implementation(libs.retrofit2.converter.gson)
     implementation(libs.gson)
     implementation(libs.okhttp3.logging.interceptor)
     implementation(libs.okhttp3.okhttp)
